@@ -1,0 +1,134 @@
+:root {
+  --brown: #6F4E37;
+  --dark-brown: #3B2F2F;
+  --mint: #A8DADC;
+  --cream: #F5EFE6;
+  --gold: #D4A373;
+  --outline: rgba(0, 0, 0, 0.6);
+  --pure-white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    135deg,
+   /* #1d274d,
+    #06542f*/
+    #EAF4F2, #CFE8E2
+    /*#E6F0F3, #DDEEE6*/
+    /*#2C2F33, #1F2A24*/
+  );
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 0;
+}
+
+/* APP SHELL */
+.app-shell {
+  background: #F5EFE6; /* Cream */
+  width: 90%;
+  max-width: 1400px;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  border: 1.5px solid var(--outline);
+}
+
+/* NAVBAR */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--cream);
+   border-bottom: 2px solid rgba(2, 2, 2, 0.6);
+}
+
+.logo {
+  color: var(--mint);
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: var(--mint);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.btn-secondary {
+  background: var(--brown);
+  color: var(--cream);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(3, 3, 3, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+}
+
+/* LAYOUT */
+.container {
+  background: var(--pure-white);  
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+}
+
+/* FILTERS */
+.filters {
+  background: var(--cream);
+  padding: 1rem;
+  border: 1px solid var(--outline);
+  border-radius: 16px;
+}
+
+/* PROMO */
+.promo {
+  background: var(--mint);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px dashed var(--outline);
+}
+
+/* CARD */
+.card {
+  display: flex;
+  gap: 1rem;
+  background: var(--cream);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--gold);
+  margin-bottom: 1rem;
+  border: 1px solid var(--outline);
+}
+
+.card img {
+  width: 150px;
+  border-radius: 8px;
+}
+.card:hover {
+  border-color: #D4A373;
+}
+input, select {
+  border: 1px solid var(--outline);
+  border-radius: 10px;
+  background: white;
+}
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--mint);
+}
