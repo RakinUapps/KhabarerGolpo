@@ -10,18 +10,122 @@
   <div class="container">
         <div class="header">
             <div class="title">Khaberer Golpo</div>
-           
         </div>
   <div class="header">
+    <button class="ghost-button">Search</button>
+    <button class="ghost-button">Categories</button>
+    <button class="ghost-button">Location</button>
     <button class="ghost-button">Sign In</button>
   </div>
         <div class="content-wrapper">
             <div class="content-area">
                 <h2>Welcome to Khabarer Golpo</h2>
                 <p>Your gateway to the best food spots in Chittagong!</p>
+
+                <div class="recommendation-section">
+            <h2 class="section-title">Recommendation of the Day</h2>
+            
+            <div class="food-items-container">
+                <div class="food-item highlighted">
+                    <div class="food-image-placeholder"></div>
+                    <h3 class="food-name">Kacchi</h3>
+                    <p class="restaurant-name">Sultan's Dine</p>
+                    <p class="food-description">Authentic slow-cooked biryani with tender meat and aromatic spices</p>
+                    <span class="highlight-badge">Today's Special</span>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image-placeholder"></div>
+                    <h3 class="food-name">Mezban</h3>
+                    <p class="restaurant-name">Mezzan Haile Aiyuun</p>
+                    <p class="food-description">Traditional Chittagonian beef curry that melts in your mouth</p>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image-placeholder"></div>
+                    <h3 class="food-name">Fuchka Platter</h3>
+                    <p class="restaurant-name">Burgwich Town</p>
+                    <p class="food-description">Ultimate fuchka experience with all the combos - tangy tamarind water, spicy masala, creamy doi, crunchy chanachur, chickpeas, and custom spice blends. Mix and match to create your perfect bite!</p>
+                </div>
             </div>
         </div>
+
+        <!-- Location Based Trending Section -->
+<div class="trending-section">
+    <div class="trending-header">
+        <h2 class="trending-title">Trending in Chittagong</h2>
+        <div class="location-tag">Your Area</div>
     </div>
+    
+    <div class="trending-carousel">
+        <button class="carousel-btn prev">‹</button>
+        
+        <div class="trending-items-wrapper">
+            <div class="trending-item">
+                <div class="trending-rank">1</div>
+                <div class="trending-image-box"></div>
+                <div class="trending-info">
+                    <h3 class="trending-food">Beef Tehari</h3>
+                    <p class="trending-restaurant">Cafe Al-Baik</p>
+                    <div class="trending-stats">
+                        <span class="stat">⭐ 4.8</span>
+                        <span class="stat">🔥 250 reviews today</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-item">
+                <div class="trending-rank">2</div>
+                <div class="trending-image-box"></div>
+                <div class="trending-info">
+                    <h3 class="trending-food">Shahi Paratha</h3>
+                    <p class="trending-restaurant">Koyla Chittagong</p>
+                    <div class="trending-stats">
+                        <span class="stat">⭐ 4.7</span>
+                        <span class="stat">🔥 198 reviews today</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-item">
+                <div class="trending-rank">3</div>
+                <div class="trending-image-box"></div>
+                <div class="trending-info">
+                    <h3 class="trending-food">Beef Rezala</h3>
+                    <p class="trending-restaurant">Spice & Rice</p>
+                    <div class="trending-stats">
+                        <span class="stat">⭐ 4.9</span>
+                        <span class="stat">🔥 175 reviews today</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-item">
+                <div class="trending-rank">4</div>
+                <div class="trending-image-box"></div>
+                <div class="trending-info">
+                    <h3 class="trending-food">Chicken Tikka</h3>
+                    <p class="trending-restaurant">BBQ Tonight</p>
+                    <div class="trending-stats">
+                        <span class="stat">⭐ 4.6</span>
+                        <span class="stat">🔥 142 reviews today</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-btn next">›</button>
+            </div>
+        </div>
+    
+        </div>
+            
+    </div>
+        
+</div>
+
+
+<script src="frontend/home.js"></script>
 
 </body>
 </html>
